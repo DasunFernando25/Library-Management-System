@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import logger from "./utils/logger";
 import 'dotenv/config';
+import { connect } from "./utils/database.connection";
 
 const app = express();
 const PORT = process.env.PORT || "8090";        //check if there is PORT envirenment variable. If not use use 8090 Port
@@ -22,4 +23,7 @@ app.listen(PORT, () => {                                            //function f
     // logger.warn("This is Warning");
 
     logger.info(`Server is up and running on PORT ${PORT}`);
+
+    connect();
 });
+
