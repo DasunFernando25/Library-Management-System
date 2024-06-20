@@ -25,5 +25,5 @@ app.listen(PORT, () => {                                            //function f
     logger.info(`Server is up and running on PORT ${PORT}`);
 
     connect();
-});
+}); 
 
