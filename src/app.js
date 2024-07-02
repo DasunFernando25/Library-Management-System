@@ -5,7 +5,7 @@ import passport from "passport";
 import session from "express-session";
 import logger from "./utils/logger";
 import config from "./configs";
-import routesInit from './api/routes/routeIndex';
+import { routesInit } from "./api/routes/routeIndex";
 import { connect } from "./utils/database.connection";
 import { googleAuth } from "./configs/google.config";
 
